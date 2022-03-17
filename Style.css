@@ -1,0 +1,407 @@
+/* CSS RESET*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* UTILITY CLASSES*/
+.heading{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.heading1{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+}
+
+
+/* NAVIGATION BAR*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+/* NAVIGATION BAR:- LOGO ANG IMAGE*/
+#logo{
+    margin: 0px 0px;
+}
+
+#logo img{
+    height: 50px;
+    width: 140px;
+    margin: 5px 10px;
+    
+}
+
+/* NAVIGATION BAR:- LIST STYLE*/
+#navbar ul{
+    display: flex;
+    
+}
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a{
+    display: block;
+    margin: 15px 20px;
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    transition: transform 0.5s;
+    
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+
+#navbar ul li a:hover{
+    transform: scale(1.2);
+}
+
+/* HOME SECTION*/
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 200px;
+    height: 650px;
+
+
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../bg2.jpg') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 99%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+}
+#home h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+
+}
+
+#home p{
+    text-align: center;
+    font-size: large;
+    font-family: 'Lobster', cursive;
+}
+
+
+.btn{
+    padding: 10px 10px;
+    margin: 20px;
+    border: 2px solid rgb(15, 15, 15);
+    border-radius: 7px;
+    background-color: aliceblue;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.5s;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+/*SERVICES SECTION*/
+.blog-container::before{
+    content: "";
+    position: absolute;
+    height: 120%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background: url('../bg6.jpg')no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+
+#blog{
+    margin: 34px;
+    display: flex;
+
+}
+
+#blog .box{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(236, 232, 232);
+}
+
+#blog .box img{
+    height: 170px;
+    display: block;
+    margin: auto;
+}
+
+#blog p{
+    font-size: large;
+    font-weight: 600;
+}
+
+#blog h3:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+/* READ MORE BUTTON*/
+#butt1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn1{
+    padding: 10px 30px;
+    margin: 50px;
+    border: 2px solid rgb(15, 15, 15);
+    border-radius: 7px;
+    background-color: aliceblue;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.5s;
+}
+
+.btn1:hover{
+    transform: scale(1.2);
+}
+
+/* CLIENT SECTION*/
+#clients{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#clients-section{
+    height: 450px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+.client-item{
+    padding: 23px;
+}
+
+
+/* ABOUT PETUS SECTION*/
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 224px 1px;
+}
+
+.aboutus{
+    border: 2px solid gray;
+    background-color: rgb(236, 232, 232);
+    border-radius: 10px;
+    padding: 20px 0px;
+
+}
+
+
+#about h1{
+    font-weight: bolder;
+    
+}
+
+#about p{
+    font-size: large;
+    font-weight: 600;
+
+}
+
+#about::before{
+    content: "";
+    position: absolute;
+    background: url('../bg10.png')no-repeat center center/cover;
+    height: 110%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+/* CONTACT SECTION*/
+footer{
+    background: black;
+    color: white;
+    padding: 12px 20px;
+}
+#contact{
+    position: relative;
+    padding: 50px 0px;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg')no-repeat center center/cover;
+    height: 115%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.75;
+    
+}
+
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+ 
+
+}
+
+#submitbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 9px;
+    left: 47%;
+    transition: transform 0.5s;
+}
+
+#submitbtn:hover{
+    transform: scale(1.2);
+}
+
+
+
+.logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logos img{
+    height: 45px;
+
+}
+
+.logoitem{
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+/* BLOGS SECTION */
+#services-section::before{
+    content: "";
+    position: absolute;
+    height: 173%;
+    width: 100%;
+    background: url('../gilhari.jpg')no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+#services-section{
+    margin: 10px;
+    padding: 50px 0px;
+}
+
+.servicesbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.happiness{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 50px;
+    background-color: rgb(236, 232, 232);
+    font-size: medium;
+    font-weight: 600;
+
+}
+
+.tcitem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: rgb(236, 232, 232);
+
+}
+
+.tandc{
+    margin: 10px;
+    padding: 100px 0px;
+
+}
